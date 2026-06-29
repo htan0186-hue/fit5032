@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #172033;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background:
+    linear-gradient(135deg, rgba(35, 112, 119, 0.14), transparent 32%),
+    linear-gradient(315deg, rgba(190, 97, 47, 0.16), transparent 36%),
+    #f7f8fb;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.page-shell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 32px 20px;
+}
+
+.welcome-panel {
+  width: min(720px, 100%);
+  border: 1px solid #d8dde8;
+  border-radius: 8px;
+  padding: clamp(28px, 5vw, 52px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 48px rgba(23, 32, 51, 0.12);
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: #237077;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  color: #172033;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.03;
+  letter-spacing: 0;
+}
+
+.intro {
+  max-width: 56ch;
+  margin: 20px 0 28px;
+  color: #4b566b;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.name-card {
+  display: grid;
+  gap: 6px;
+  width: min(360px, 100%);
+  border-left: 5px solid #be612f;
+  border-radius: 8px;
+  padding: 20px 22px;
+  color: #172033;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(23, 32, 51, 0.1);
+}
+
+.name-card span {
+  color: #5b667a;
+  font-size: 0.95rem;
+}
+
+.name-card strong {
+  font-size: clamp(1.9rem, 8vw, 2.7rem);
+  line-height: 1.05;
+  letter-spacing: 0;
+}
